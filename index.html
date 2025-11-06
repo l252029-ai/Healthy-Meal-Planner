@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HealthyMealPlanner - Responsive Mini-Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>HealthyMealPlanner</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#join">Join Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#tabs-section">Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About HealthyMealPlanner</h2>
+      <p>HealthyMealPlanner is your ultimate guide to nutritious eating, personalized meal plans, and wellness tracking.</p>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Customizable weekly meal plans based on your preferences</li>
+        <li>Nutrition tracking with calorie and macro breakdowns</li>
+        <li>Recipe suggestions with easy cooking instructions</li>
+      </ul>
+    </section>
+
+    <section id="join">
+      <h2>Join Our Community</h2>
+      <form action="#" method="post" aria-label="Join HealthyMealPlanner form">
+        <fieldset>
+          <legend>Sign up for HealthyMealPlanner</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+          <p>Choose your interests:</p>
+          <label><input type="checkbox" name="interests" value="meal-plans" /> Meal Plans</label>
+          <label><input type="checkbox" name="interests" value="nutrition-tracking" /> Nutrition Tracking</label>
+          <label><input type="checkbox" name="interests" value="recipes" /> Recipes</label>
+
+          <label class="switch">
+            <input type="checkbox" name="updates" />
+            <span class="slider"></span>
+            Receive Updates
+          </label>
+
+          <p>Select your subscription plan:</p>
+          <label><input type="radio" name="plan" value="basic" required /> Basic</label>
+          <label><input type="radio" name="plan" value="premium" /> Premium</label>
+
+          <label for="country">Select your country</label>
+          <select id="country" name="country" required>
+            <option value="">-- Please choose --</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message">Additional comments</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="faq" class="accordion">
+      <h2>FAQ</h2>
+      <div>
+        <input type="checkbox" id="q1" />
+        <label for="q1">What is HealthyMealPlanner?</label>
+        <div class="answer">
+          <p>It is a digital tool designed to help you plan, track, and maintain a healthy diet easily.</p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="q2" />
+        <label for="q2">How can I customize my meal plans?</label>
+        <div class="answer">
+          <p>You can set your dietary preferences and goals to receive personalized meal plans every week.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tabs-section" class="tabs">
+      <input type="radio" id="tab1" name="tabs" checked />
+      <label for="tab1">Overview</label>
+
+      <input type="radio" id="tab2" name="tabs" />
+      <label for="tab2">Subscription Plans</label>
+
+      <section id="content1" class="tab-content">
+        <p>HealthyMealPlanner offers easy-to-follow meal plans, nutrition tips, and a supportive community to help you stay on track.</p>
+      </section>
+
+      <section id="content2" class="tab-content">
+        <p>Basic plan includes weekly meal plans and community access. Premium plan adds 1-on-1 nutrition coaching and exclusive recipes.</p>
+      </section>
+    </section>
+
+    <section id="contact">
+      <h2>Have Questions? Contact Us</h2>
+      <form action="#" method="post" aria-label="Contact queries form">
+        <fieldset>
+          <legend>Send Your Queries</legend>
+
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" name="contact-name" required placeholder="Your full name" />
+
+          <label for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" name="contact-email" required placeholder="you@example.com" />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required placeholder="Subject of your query" />
+
+          <label for="query-message">Message</label>
+          <textarea id="query-message" name="query-message" rows="5" required placeholder="Write your message here"></textarea>
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HealthyMealPlanner</p>
+  </footer>
+</body>
+</html>
